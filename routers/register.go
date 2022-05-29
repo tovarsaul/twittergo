@@ -3,7 +3,7 @@ package routers
 import (
 	"encoding/json"
 	"net/http"
-	"twittergo/domain"
+	"twittergo/domain/register"
 	"twittergo/models"
 )
 
@@ -22,12 +22,12 @@ func Register(writer http.ResponseWriter, request *http.Request) {
 		http.Error(writer, "Password is to short", 400)
 		return
 	}
-	_, find, _ := domain.CheckIfUserExists(user.Mail)
+	_, find, _ := register.CheckIfUserExists(user.Mail)
 	if find {
 		http.Error(writer, "Mail exists", 400)
 		return
 	}
-	_, status, err := domain.InsertRegister(user)
+	_, status, err := register.InsertRegister(user)
 	if err != nil {
 		http.Error(writer, "Error occurs while registry user "+err.Error(), 400)
 		return

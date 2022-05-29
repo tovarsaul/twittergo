@@ -1,9 +1,10 @@
-package domain
+package register
 
 import (
 	"context"
 	"go.mongodb.org/mongo-driver/bson"
 	"time"
+	"twittergo/domain/config"
 	"twittergo/models"
 )
 
@@ -11,7 +12,7 @@ func CheckIfUserExists(mail string) (models.User, bool, string) {
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()
 
-	db := MongoDBConnection.Database("twitter")
+	db := config.MongoDBConnection.Database("twitter")
 	col := db.Collection("user")
 	condition := bson.M{"mail": mail}
 	var result models.User
