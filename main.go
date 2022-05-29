@@ -2,13 +2,13 @@ package main
 
 import (
 	"log"
-	"twittergo/bd"
+	"twittergo/domain"
 
 	"twittergo/handlers"
 )
 
 func main() {
-	if bd.CheckConection() == 0 {
+	if domain.CheckConection() == 0 {
 		log.Fatal("Error al conectar a la bbdd")
 		return
 	}

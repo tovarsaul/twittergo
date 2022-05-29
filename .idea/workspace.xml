@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ede240-e196-4eb0-b44c-4b74f6c38b69" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bd/conection.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/handlers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/checkExists.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/encrypter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/insertRegister.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/checkDB.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routers/register.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bd/conection.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/conection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/handlers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +39,9 @@
         <option name="url" value="git@github.com:tovarsaul/twittergo.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/go/pkg/mod/go.mongodb.org/mongo-driver@v1.9.1/bson/primitive/objectid.go" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -140,7 +146,7 @@
       <workItem from="1653818255968" duration="2204000" />
       <workItem from="1653822712431" duration="810000" />
       <workItem from="1653823735321" duration="2131000" />
-      <workItem from="1653827443294" duration="3164000" />
+      <workItem from="1653827443294" duration="9431000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1653822688863</created>
@@ -149,13 +155,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653822688863</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add db conection">
+      <created>1653835247533</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653835247533</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="add db conection" />
+    <option name="LAST_COMMIT_MESSAGE" value="add db conection" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
